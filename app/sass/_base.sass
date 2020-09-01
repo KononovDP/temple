@@ -3,10 +3,10 @@
   box-sizing: border-box
 
 body
-  //font-family: $default-font
-  +font-size(23)
-  +line-height(32)
-  //color: map-get($text-colors, black)
+  font-family: map-get($fonts, regular)
+  +font-size(18)
+  +line-height(21)
+  color: map-get($text-colors, primary)
 
 h1
   margin: 35px 0
@@ -85,7 +85,8 @@ a
   width: 100%
   max-width: 1920px
   min-height: 100vh
-  background: #fff
+  margin: 0 auto
+  background: url('../images/dest/main-bg.png') no-repeat center top, url('../images/dest/main-bg-1.png') repeat-y center
   overflow: hidden
 
 .container
