@@ -1,0 +1,45 @@
+.sidebar
+  position: relative
+  flex: 0 0 350px
+  min-height: 300px
+  margin-right: 20px
+  padding-left: 18px
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    width: 18px
+    height: 100%
+    background: transparent url('../images/dest/aside-bg.png') repeat-y left top
+    background-size: 100% auto
+    content: ''
+  &__nav
+    &__item
+      position: relative
+      display: flex
+      min-height: 56px
+      padding-left: 18px
+      border-bottom: 1px solid map-get($bg-colors, white)
+      background-color: map-get($bg-colors, primary)
+      &::before
+        position: absolute
+        top: 0
+        left: 9px
+        display: block
+        width: 9px
+        height: 100%
+        content: ''
+        background-color: map-get($bg-colors, white) 
+    &__link
+      display: flex
+      align-items: center
+      flex: 1
+      padding: 5px 40px 5px 25px
+      background-color: map-get($bg-colors, primary)
+      +font-size(16)
+      +line-height(19)
+      color: map-get($text-colors, secondary) 
+      &:hover, &:focus
+        background-color: map-get($bg-colors, greyLight)
+ 
