@@ -1,0 +1,44 @@
+.news
+  &__grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 20px
+  &__item
+    position: relative
+  &__date
+    position: absolute
+    top: 0
+    left: 31px
+    transform: translateY(-9px)
+    display: block
+    width: 40px 
+    height: 40px
+    background-color: map-get($bg-colors, primary)
+    text-align: center
+    +font-size(18)
+    +line-height(20)
+    font-weight: bold
+    color: map-get($text-colors, secondary)
+    z-index: 10
+  &__img
+    &::before
+      padding-top: 46.065%
+  &__text
+    padding: 13px 0
+    +font-size(14)
+    +line-height(20)
+  &__title
+    margin: 5px 0
+    +font-size(18)
+    +line-height(21)
+    font-weight: bold
+    letter-spacing: 0.5px
+  &__descr
+    margin-bottom: 16px
+  &__link
+    font-weight: bold
+    color: inherit
+    text-decoration: underline
+    letter-spacing: 0.5px
+    &:hover, &:focus
+      text-decoration: none
