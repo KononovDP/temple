@@ -1,0 +1,20 @@
+.social
+  display: flex
+  flex-wrap: wrap
+  &__item
+    &:not(:last-child)
+      margin-right: 11px
+  &__link
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 43px
+    height: 43px
+    padding: 10px
+    background-color: map-get($bg-colors, grey)
+    &:hover, &:focus
+      background-color: map-get($text-colors, grey)
+      .social__icon
+        fill: map-get($bg-colors, grey)
+  &__icon
+    fill: map-get($text-colors, grey)

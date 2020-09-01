@@ -1,0 +1,40 @@
+.header
+  padding: 60px 0 47px
+  background: transparent url('../images/dest/header-bg.png') repeat-x left top
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 20px
+  &__burger
+    display: none
+  &__nav
+    display: none
+  &__wrapper
+    flex: 1
+    display: flex
+    justify-content: space-between
+  &__info
+    display: flex
+    align-items: flex-start
+    max-width: 400px
+    margin: 0 auto
+    font-weight: bold
+    letter-spacing: 0.6px
+    &__icon
+      margin-right: 20px
+  &__logo
+    display: inline-block
+    max-width: 540px
+    +font-size(30)
+    +line-height(35)
+    font-weight: bold
+    letter-spacing: 1px
+  &__social
+    display: flex
+    align-items: center
+    +font-size(16)
+    +line-height(19)
+    font-weight: bold
+    .social
+      margin-left: 20px
