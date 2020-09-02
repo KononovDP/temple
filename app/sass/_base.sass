@@ -23,6 +23,9 @@ a
 .hidden
   display: none!important
 
+.mt-0
+  margin-top: 0
+
 .text__upper
   text-transform: uppercase
 
@@ -100,6 +103,7 @@ a
   flex: 1
   &-inner
     display: flex
+    align-items: flex-start
 
 .section__title
   margin: 18px 0
@@ -108,3 +112,9 @@ a
   font-weight: bold
   color: map-get($text-colors, primary)
   letter-spacing: 1px
+
+.section-widgets
+  display: flex
+  .widgets
+    flex: 0 0 214px
+    margin-left: 10px
