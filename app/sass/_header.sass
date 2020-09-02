@@ -2,14 +2,62 @@
   padding: 60px 0 47px
   background: transparent url('../images/dest/header-bg.png') repeat-x left top
   &__inner
+    position: relative
     display: flex
     align-items: center
     justify-content: space-between
     padding-left: 20px
   &__burger
     display: none
+
   &__nav
-    display: none
+    position: absolute
+    top: 100%
+    right: 0
+    transform: translateY(47px)
+    width: calc(100% - 350px - 20px)
+    padding-bottom: 6px
+    background: transparent url('../images/dest/nav-bg.png') repeat-x left bottom
+    z-index: 10
+    &__list
+      display: flex
+      height: 57px
+      background-color: map-get($bg-colors, secondary)
+      border: 1px solid map-get($text-colors, primary)
+    &__item
+      position: relative
+      display: flex
+      flex-grow: 1
+      &::after
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translate(1px, -50%)
+        display: block
+        content: ''
+        width: 1px
+        height: 18px
+        background-color: map-get($text-colors, primary)
+        opacity: .32
+      &:last-child
+        &::after
+          display: none
+    &__link
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      padding: 0 10px 5px 10px
+      text-align: center
+      +font-size(16)
+      +line-height(19)
+      color: map-get($text-colors, primary)
+      &:hover, &:focus, &.active
+        background-color: map-get($text-colors, primary)
+        font-weight: bold
+        color: map-get($text-colors, secondary)
+
+        
   &__wrapper
     flex: 1
     display: flex
