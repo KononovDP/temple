@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>Schedule Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -16,7 +17,7 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <span class="header__logo">Храм иконы божией матери <br />  “Отрада и утешение” с. Добрыниха</span>
+          <span class="header__logo">Храм иконы Божией Матери <br />  “Отрада и утешение” с. Добрыниха</span>
 
           <button class="header__burger burger" aria-label="показать/спрятать меню">
             <span></span>
@@ -29,7 +30,7 @@
             <nav class="header__nav">
               <ul class="header__nav__list">
                 <li class="header__nav__item">
-                  <a href="#" class="header__nav__link active">Расписание богослужений</a>
+                  <a href="#" class="header__nav__link">Расписание богослужений</a>
                 </li>
                 <li class="header__nav__item">
                   <a href="#" class="header__nav__link">Новости</a>
@@ -103,20 +104,32 @@
         <div class="page-inner">
           
           <aside class="sidebar">
-            <nav class="sidebar__nav">
-              <ul class="sidebar__nav__list">
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">О храме</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">История</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Наши святыни</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Больныный храм</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Воинский храм</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Фото/Видео</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Социальный проект “Милосердия”</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">О православии</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Вопросы священнику</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Архив</a></li>
-              </ul>
-            </nav>
+            <div class="sidebar__wrapper">
+              <div class="sidebar__nav__item sidebar__nav--mob">
+                <span class="sidebar__nav__link">
+                  Главная
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" viewBox="0 0 512.011 512.011" fill="#DAB59B">
+                    <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                     s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                     C514.096,145.416,514.096,131.933,505.755,123.592z"/>
+                  </svg>
+                </span>
+              </div>
+              <nav class="sidebar__nav">
+                <ul class="sidebar__nav__list">
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">О храме</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">История</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Наши святыни</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Больныный храм</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Воинский храм</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Фото/Видео</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Социальный проект “Милосердия”</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">О православии</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Вопросы священнику</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Архив</a></li>
+                </ul>
+              </nav>
+            </div>
           </aside>
 
           <main class="main">
@@ -200,6 +213,78 @@
             </div>
             <!-- SEPARATOR END -->
 
+            <!-- SCHEDULE -->
+            <section class="schedule__section">
+              <ul class="schedule__info">
+                <li>Богослужения в Успенском соборе с. Добрыниха </li>
+                <li>с 24 по 30 августа</li>
+                <li>СЕДМИЦА 12-я по ПЯТИДЕСЯТНИЦЕ</li>
+                <li>УСПЕНСКИЙ ПОСТ</li>
+              </ul>           
+              <div class="schedule">
+                <div class="schedule__header">
+                  <div class="schedule__header__date">Дата</div>
+                  <div class="schedule__header__title">Богослужение</div>
+                  <div class="schedule__header__time">Время</div>
+                </div>
+                <div class="schedule__body">
+
+                  <div class="schedule__item">
+                    <div class="schedule__item__date">
+                      <strong>25 августа</strong> <br>Вторник
+                    </div>
+                    <div class="schedule__item__title">Молебное пение с акафистом перед Озерянской иконой
+                      Божией Матери. Водосвятие. Панихида</div>
+                    <div class="schedule__item__time">8:00</div>
+                  </div>
+
+                  <div class="schedule__item">
+                    <div class="schedule__item__date">
+                      <strong>28 августа</strong> <br>Вторник
+                    </div>
+                    <div class="schedule__item__title">Заказные молебны с акафистами. <br>Панихида</div>
+                    <div class="schedule__item__time">16:00</div>
+                  </div>
+
+                  <div class="schedule__item--multiple">
+                    <div class="schedule__item--multiple__date red">
+                      <strong>28 августа</strong> <br>Вторник
+                    </div>
+                    <div class="schedule__item--multiple__descr">
+                      <div class="schedule__item--multiple__inner red">
+                        <div class="schedule__item--multiple__title">
+                          <strong>УСПЕНИЕ ПРЕСВЯТОЙ ВЛАДЫЧИЦЫ НАШЕЙ <br>БОГОРОДИЦЫ И ПРИСНОДЕВЫ МАРИИ</strong>
+                        </div>
+                        <div class="schedule__item--multiple__time"></div>
+                      </div>
+                      <div class="schedule__item--multiple__inner">
+                        <div class="schedule__item--multiple__title">Часы. Ранняя Божественная Литургия. <br>Исповедь и Святое Причастие</div>
+                        <div class="schedule__item--multiple__time">6:30</div>
+                      </div>
+                      <div class="schedule__item--multiple__inner">
+                        <div class="schedule__item--multiple__title">Часы. Ранняя Божественная Литургия. <br>Исповедь и Святое Причастие</div>
+                        <div class="schedule__item--multiple__time">8:30</div>
+                      </div>
+                      <div class="schedule__item--multiple__inner">
+                        <div class="schedule__item--multiple__title">Вечернее богослужение с чином <br>Погребения Божией Матери</div>
+                        <div class="schedule__item--multiple__time">16:00</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__item">
+                    <div class="schedule__item__date">
+                      <strong>30 августа</strong> <br>Вторник
+                    </div>
+                    <div class="schedule__item__title">Заказные молебны с акафистами. <br>Панихида</div>
+                    <div class="schedule__item__time">16:00</div>
+                  </div>
+
+                </div>
+              </div>           
+            </section>
+            <!-- SCHEDULE END -->
+
           </main>
 
         </div>
@@ -212,7 +297,7 @@
       <div class="container">
         <div class="footer__inner">
           <p class="footer__col">Все права защищены Ltd. © 2020</p>
-          <p class="footer__col">Сайт разработан в RemoteAgency</p>
+          <p class="footer__col">Сайт разработан в <a href="https://remoteagency.ru/" target="_blank">RemoteAgency</a></p>
         </div>
       </div>
     </footer>
