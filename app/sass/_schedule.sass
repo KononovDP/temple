@@ -1,0 +1,38 @@
+.schedule
+  &__info
+    margin-bottom: 10px
+    +font-size(18)
+    +line-height(24)
+    font-weight: bold
+    color: map-get($text-colors, primary)
+  &__header
+    display: flex
+    background-color: map-get($bg-colors, secondary)
+    +font-size(16)
+    +line-height(19)
+    font-weight: bold
+    text-transform: uppercase
+    &__date
+      flex: 0 0 204px
+      padding: 19px 31px
+    &__title
+      flex: 1 1 auto
+      padding: 19px 31px
+    &__time
+      flex: 0 0 120px
+      padding: 19px 31px
+  &__item
+    display: flex
+    align-items: center
+    border-bottom: 1px solid map-get($text-colors, primary)
+    &__date
+      flex: 0 0 204px
+      padding: 19px 31px
+    &__title
+      flex: 1 1 auto
+      padding: 19px 31px
+    &__time
+      flex: 0 0 120px
+      padding: 19px 31px
+
+

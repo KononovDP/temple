@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Project Title</title>
+	<title>Home Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
@@ -29,7 +29,7 @@
             <nav class="header__nav">
               <ul class="header__nav__list">
                 <li class="header__nav__item">
-                  <a href="#" class="header__nav__link active">Расписание богослужений</a>
+                  <a href="#" class="header__nav__link">Расписание богослужений</a>
                 </li>
                 <li class="header__nav__item">
                   <a href="#" class="header__nav__link">Новости</a>
@@ -103,20 +103,32 @@
         <div class="page-inner">
           
           <aside class="sidebar">
-            <nav class="sidebar__nav">
-              <ul class="sidebar__nav__list">
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">О храме</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">История</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Наши святыни</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Больныный храм</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Воинский храм</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Фото/Видео</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Социальный проект “Милосердия”</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">О православии</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Вопросы священнику</a></li>
-                <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Архив</a></li>
-              </ul>
-            </nav>
+            <div class="sidebar__wrapper">
+              <div class="sidebar__nav__item sidebar__nav--mob">
+                <span class="sidebar__nav__link">
+                  Главная
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" viewBox="0 0 512.011 512.011" fill="#DAB59B">
+                    <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                     s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                     C514.096,145.416,514.096,131.933,505.755,123.592z"/>
+                  </svg>
+                </span>
+              </div>
+              <nav class="sidebar__nav">
+                <ul class="sidebar__nav__list">
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">О храме</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">История</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Наши святыни</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Больныный храм</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Воинский храм</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Фото/Видео</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Социальный проект “Милосердия”</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">О православии</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Вопросы священнику</a></li>
+                  <li class="sidebar__nav__item"><a href="#" class="sidebar__nav__link">Архив</a></li>
+                </ul>
+              </nav>
+            </div>
           </aside>
 
           <main class="main">
@@ -132,7 +144,7 @@
                   ею христианской общины. Задачи и цель христианской общины она видит «в служении жителям 
                   ближней окрестности в нуждах, в уходе за больными, в обучении и воспитании детей 
                   женского пола».</p>
-                <div class="for__img" style="float: left; margin-right: 20px;">
+                <div class="for__img" style="float: left;">
                   <img src="images/dest/about-img.jpg" alt="">
                 </div>  
                 <p>В 1893 году Мария Владимировна строит сестринский корпус с домовым храмом во имя иконы 
@@ -158,9 +170,12 @@
                   <div class="calendar__body"></div>
                 </div>
 
-                <a href="#" class="for__img">
+                <a href="http://sohranihram.ru/" target="_blank" class="for__img">
                   <img src="images/dest/donate.jpg" alt="">
                 </a>
+
+                <script language="Javascript" src="https://script.pravoslavie.ru/calendar.php?advanced=1&date=0927"></script>
+                
               </aside>
               <!-- WIDGETS -->
 

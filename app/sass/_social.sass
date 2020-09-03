@@ -1,9 +1,14 @@
 .social
   display: flex
-  flex-wrap: wrap
+  flex-wrap: wrap  
+  +screen(lg)
+    +font-size(14)
+    +line-height(16)
   &__item
     &:not(:last-child)
       margin-right: 11px
+      +screen(xl)
+        margin-right: 5px
   &__link
     display: flex
     align-items: center
@@ -12,6 +17,13 @@
     height: 43px
     padding: 10px
     background-color: map-get($bg-colors, grey)
+    +screen(xl)
+      width: 36px
+      height: 36px
+      padding: 7px
+    +screen(lg)
+      width: 29px
+      height: 29px
     &:hover, &:focus
       background-color: map-get($text-colors, grey)
       .social__icon

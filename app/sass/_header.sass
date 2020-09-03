@@ -1,24 +1,38 @@
 .header
   padding: 60px 0 47px
   background: transparent url('../images/dest/header-bg.png') repeat-x left top
+  +screen(xl)
+    padding: 30px 0
+  +screen(lg)
+    padding: 28px 0 22px
+    background-position: left top -8px
   &__inner
     position: relative
     display: flex
     align-items: center
     justify-content: space-between
     padding-left: 20px
+    +screen(xl)
+      padding-left: 0
+    +screen(lg)
+      position: static
   &__burger
     display: none
+    +screen(lg)
+      display: block
 
   &__nav
     position: absolute
     top: 100%
     right: 0
     transform: translateY(47px)
-    width: calc(100% - 350px - 20px)
+    width: calc(100% - 25% - 20px)
     padding-bottom: 6px
     background: transparent url('../images/dest/nav-bg.png') repeat-x left bottom
     z-index: 10
+    +screen(xl)
+      transform: translateY(30px)
+
     &__list
       display: flex
       height: 57px
@@ -56,12 +70,12 @@
         background-color: map-get($text-colors, primary)
         font-weight: bold
         color: map-get($text-colors, secondary)
-
-        
   &__wrapper
     flex: 1
     display: flex
     justify-content: space-between
+    +screen(lg)
+      display: none
   &__info
     display: flex
     align-items: flex-start
@@ -78,11 +92,90 @@
     +line-height(35)
     font-weight: bold
     letter-spacing: 1px
+    +screen(xl)
+      +font-size(20)
+      +line-height(24)
+    +screen(md)
+      +font-size(14)
+      +line-height(16)
+  &__info
+    +screen(xl)
+      +font-size(12)
+      +line-height(18)
+
   &__social
     display: flex
     align-items: center
     +font-size(16)
     +line-height(19)
-    font-weight: bold
+    font-weight: bold  
+    +screen(xl)
+      +font-size(14)
+      +line-height(18)  
     .social
       margin-left: 20px
+
+.header--opened    
+  +screen(lg)
+    position: relative
+    background-color: map-get($bg-colors, secondary)
+    z-index: 300
+    .header
+      &__wrapper
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 42px 20px 42px
+        background-color: map-get($bg-colors, secondary)
+        border-top: 1px solid #000
+        &::after
+          position: absolute
+          top: 0
+          right: 12px
+          width: 18px
+          height: 100%
+          display: block
+          content: ''
+          background: transparent url('../images/dest/aside-bg.png') repeat-y left top
+          background-size: 100% auto
+      &__nav
+        position: relative
+        transform: none
+        width: 100%
+        max-width: 222px
+        margin-bottom: 24px
+        padding: 0 0 11px 0
+        background: transparent
+        &::after
+          position: absolute
+          bottom: 0
+          left: 50%
+          transform: translateX(-50%)
+          display: block
+          content: ''
+          width: 60px
+          height: 1px
+          background-color: rgba(57,34,15,.1)
+        &__list
+          flex-direction: column
+          height: auto
+          border: none
+        &__item
+          border-bottom: 1px solid rgba(57,34,15,.32)
+          &:last-child
+            border-bottom: none
+          &::after
+            display: none
+        &__link
+          min-height: 59px
+      &__info
+        margin-bottom: 34px
+        +font-size(12)
+        +line-height(14)
+        &__icon
+          margin-right: 10px
+

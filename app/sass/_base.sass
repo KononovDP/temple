@@ -7,6 +7,9 @@ body
   +font-size(18)
   +line-height(21)
   color: map-get($text-colors, primary)
+  +screen(lg)
+    +font-size(14)
+    +line-height(18)
 
 h1
   margin: 35px 0
@@ -16,15 +19,14 @@ h2
 
 p
   margin: 15px 0
+  +screen(lg)
+    margin: 10px 0
 
 a
   text-decoration: none
 
 .hidden
   display: none!important
-
-.mt-0
-  margin-top: 0
 
 .text__upper
   text-transform: uppercase
@@ -90,10 +92,10 @@ a
   min-height: 100vh
   margin: 0 auto
   background: url('../images/dest/main-bg.png') no-repeat center top, url('../images/dest/main-bg-1.png') repeat-y center
+  background-size: cover
   overflow: hidden
 
 .container
-  position: relative
   width: 100%
   max-width: 1440px
   margin: 0 auto
@@ -104,10 +106,15 @@ a
   &-inner
     display: flex
     align-items: flex-start
+    +screen(lg)
+      flex-wrap: wrap
 
 .main
+  flex: 1 1 auto
   padding-top: 90px
-  
+  +screen(lg)
+    padding-top: 34px
+
 .section__title
   margin: 18px 0
   +font-size(30)
@@ -115,9 +122,30 @@ a
   font-weight: bold
   color: map-get($text-colors, primary)
   letter-spacing: 1px
+  +screen(lg)
+    margin: 10px 0
+    +font-size(24)
+    +line-height(28)
 
 .section-widgets
   display: flex
+  +screen(md)
+    flex-direction: column
   .widgets
     flex: 0 0 214px
+    max-width: 214px
     margin-left: 10px
+    +screen(md)
+      margin: 26px auto 12px
+
+.about
+  .for__img
+    margin-right: 20px
+    +screen(sm)
+      width: 100%
+      margin-right: 0
+      margin-bottom: 10px
+
+
+.mt-0
+  margin-top: 0

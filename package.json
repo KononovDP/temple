@@ -23,6 +23,7 @@
 		"gulp-uglify-es": "^2.0.0"
 	},
 	"dependencies": {
-		"gulp-sourcemaps": "^2.6.5"
+		"gulp-sourcemaps": "^2.6.5",
+		"jquery": "^3.5.1"
 	}
 }
