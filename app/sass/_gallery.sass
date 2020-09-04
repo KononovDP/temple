@@ -1,0 +1,28 @@
+.gallery
+  &__subtitle
+    margin: 26px 0
+    +font-size(18)
+    +line-height(21)
+    font-weight: bold
+    +screen(lg)
+      margin: 10px 0
+      +font-size(16)
+
+  &__grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 20px
+    +screen(md)
+      grid-template-columns: repeat(2, 1fr)
+  &__item
+    display: block
+  &__link
+    display: block
+    img
+      width: 100%
+  &__social
+    display: flex
+    align-items: center
+    justify-content: center
+    .social
+      margin-left: 20px

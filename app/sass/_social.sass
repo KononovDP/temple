@@ -30,3 +30,19 @@
         fill: map-get($bg-colors, grey)
   &__icon
     fill: map-get($text-colors, grey)
+
+.social
+  &__sm 
+    .social
+      &__item
+        &:not(:last-child)
+          margin-right: 10px
+          +screen(xl)
+            margin-right: 10px
+      &__link
+        width: 29px
+        height: 29px
+        padding: 7px
+        +screen(xl)
+          width: 29px
+          height: 29px

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Home Page</title>
+	<title>Главная - О храме</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -164,18 +164,22 @@
               <!-- ABOUT END -->
 
               <!-- WIDGETS -->
-              <aside class="widgets">
+              <aside class="widgets">              
 
                 <div class="calendar">
-                  <div class="calendar__header">Православый календарь</div>
-                  <div class="calendar__body"></div>
-                </div>
+                  <div class="calendar__header">Православый календарь 1</div>                  
+                  <div class="calendar__body">
+                    <script language="Javascript">
+                      var d=new Date();
+                      var to=-4-d.getTimezoneOffset()/60;
+                      document.write ( '<script language="Javascript" src="https://script.pravoslavie.ru/calendar.php?tmshift='+to +'"><\/script>');
+                      </script>
+                  </div>  
+                </div>           
 
                 <a href="http://sohranihram.ru/" target="_blank" class="for__img">
                   <img src="images/dest/donate.jpg" alt="">
                 </a>
-
-                <script language="Javascript" src="https://script.pravoslavie.ru/calendar.php?advanced=1&date=0927"></script>
                 
               </aside>
               <!-- WIDGETS -->
